@@ -1,5 +1,5 @@
 # PSPpred-GIN
-A GIN-based deep learning framework to classify phage structural proteins.
+A graph isomorphism network-based deep learning framework to classify phage structural proteins.
 
 Given a phage protein sequence as input, PSPpred-GIN classifies it one of the 10 following classes:
 1. Major capsid
