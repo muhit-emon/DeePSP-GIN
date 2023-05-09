@@ -12,3 +12,6 @@ Given a phage protein sequence as input, PSPpred-GIN classifies it one of the 10
 8. Tail sheath
 9. Collar
 10. Head-Tail joining (HTJ)
+
+# Workflow of PSPpred-GIN
+![PSPpred-GIN_workflow](https://user-images.githubusercontent.com/82660145/236974671-8d921ad2-3e2a-4ae5-85ff-557b0aface2f.png)
