@@ -26,6 +26,14 @@ rm -r work
 </pre>
 The command line options for this script are: <br><br>
 <b>--prot</b>: The absolute path of the fasta file containing protein sequences <br>
-<b>--out_prefix</b>: The prefix of the output csv file name <br><br>
+<b>--out_prefix</b>: The prefix of the output csv file name <br>
 
 With <b>--out_prefix demo</b>, an output CSV file named <b>demo.csv</b> will be generated inside <b>DeePSP-GIN</b> directory. <br><br>
+
+# (2) Multi-Class PSP Classification
+Go inside <b>DeePSP-GIN</b> directory. <br> <br>
+<b>To classify PSPs into 7 classess from an input protein fasta file, use the following command</b> <br>
+<pre>
+nextflow run multi.nf --prot &ltabsolute/path/to/protein/fasta/file&gt --out_prefix &ltprefix of output csv file name&gt
+rm -r work
+</pre>
