@@ -17,16 +17,15 @@ pip install "fair-esm[esmfold]"
 pip install 'openfold @ git+https://github.com/aqlaboratory/openfold.git@4b41059694619831a7db195b7e0988fc4ff3a307'
 </pre>
 
-# (1) Usage on metagenomic paired-end short read data
-Go inside <b>meta-VF-AMR/scripts</b> directory. <br> <br>
-<b>To run metaVF-AMR on metagenomic paired-end short read data (<span> &#42; </span>.fastq/<span> &#42; </span>.fq/<span> &#42; </span>.fastq.gz/<span> &#42; </span>.fq.gz), use the following command</b> <br>
+# (1) Binary PSP Classification (PSP Identification)
+Go inside <b>DeePSP-GIN</b> directory. <br> <br>
+<b>To identify PSPs from an input protein fasta file, use the following command</b> <br>
 <pre>
-nextflow run pe_pipeline.nf --R1 &ltabsolute/path/to/forward/read/file&gt --R2 &ltabsolute/path/to/reverse/read/file&gt --out_fname &ltprefix of output file name&gt
+nextflow run binary.nf --prot &ltabsolute/path/to/protein/fasta/file&gt --out_prefix &ltprefix of output csv file name&gt
 rm -r work
 </pre>
-The command line options for this script (<b>pe_pipeline.nf</b>) are: <br><br>
-<b>--R1</b>: The absolute path of the fastq file containing forward read sequences <br>
-<b>--R2</b>: The absolute path of the fastq file containing reverse read sequences <br>
-<b>--out_fname</b>: The prefix of the output file name <br><br>
+The command line options for this script are: <br><br>
+<b>--prot</b>: The absolute path of the fasta file containing protein sequences <br>
+<b>--out_prefix</b>: The prefix of the output csv file name <br><br>
 
-With <b>--out_fname demo</b>, Four fasta files named <b>demo_Reconstructed_ARG.fasta</b>, <b>demo_Reconstructed_MRG.fasta</b>, <b>demo_Reconstructed_BRG.fasta</b>, and <b>demo_Reconstructed_VF.fasta</b> will be generated inside <b>meta-VF-AMR/TMP</b> directory. <br><br>
+With <b>--out_prefix demo</b>, an output CSV file named <b>demo.csv</b> will be generated inside <b>DeePSP-GIN</b> directory. <br><br>
