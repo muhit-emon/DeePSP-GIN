@@ -5,6 +5,7 @@ A Graph Isomorphism Network (GIN)-based deep learning method for identifying and
 <ol>
   <li>Linux operating system</li>
   <li>conda</li>
+  <li>GPU (24 GB GPU memory is recommended)</li>
 </ol>
 
 # Installation
