@@ -9,17 +9,14 @@ A Graph Isomorphism Network (GIN)-based deep learning method for identifying and
 
 # Installation
 <pre>
-git clone https://github.com/muhit-emon/meta-VF-AMR.git
-cd meta-VF-AMR
-bash install.sh
+git clone https://github.com/muhit-emon/DeePSP-GIN.git
+cd DeePSP-GIN
 conda env create -f environment.yml
+conda activate DeePSP_GIN
+pip install "fair-esm[esmfold]"
+pip install 'openfold @ git+https://github.com/aqlaboratory/openfold.git@4b41059694619831a7db195b7e0988fc4ff3a307'
 </pre>
-# conda environment activation
-After installation of meta-VF-AMR, a conda environment named <b>meta-VF-AMR</b> will be created.<br>
-To activate the environment, run the following command <br>
-<pre>
-conda activate meta-VF-AMR
-</pre>
+
 # (1) Usage on metagenomic paired-end short read data
 Go inside <b>meta-VF-AMR/scripts</b> directory. <br> <br>
 <b>To run metaVF-AMR on metagenomic paired-end short read data (<span> &#42; </span>.fastq/<span> &#42; </span>.fq/<span> &#42; </span>.fastq.gz/<span> &#42; </span>.fq.gz), use the following command</b> <br>
