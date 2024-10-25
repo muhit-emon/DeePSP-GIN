@@ -1,5 +1,5 @@
 # DeePSP-GIN
-A Graph Isomorphism Network (GIN)-based deep learning method for identifying and classifying Phage Structural Proteins (PSPs)
+A Graph Isomorphism Network (GIN)-based deep learning method for identifying and classifying Phage Structural Proteins (PSPs)/Phage Virion Proteins (PVPs)
 
 # Requirements
 <ol>
