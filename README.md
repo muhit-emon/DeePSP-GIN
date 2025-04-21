@@ -40,3 +40,6 @@ Go inside <b>DeePSP-GIN</b> directory. <br> <br>
 nextflow run multi.nf --prot &ltabsolute/path/to/protein/fasta/file&gt --out_prefix &ltprefix of output csv file name&gt
 rm -r work
 </pre>
+
+# Reference
+Muhit Islam Emon, Badhan Das, Ashrith Reddy Thukkaraju, and Liqing Zhang. 2024. DeePSP-GIN: identification and classification of phage structural proteins using predicted protein structure, pretrained protein language model, and graph isomorphism network. In Proceedings of the 15th ACM International Conference on Bioinformatics, Computational Biology and Health Informatics (BCB '24). Association for Computing Machinery, New York, NY, USA, Article 42, 1–6. https://doi.org/10.1145/3698587.3701371
